@@ -118,7 +118,6 @@ func DeleteMovie(w http.ResponseWriter, r *http.Request) {
 	for index, m := range NewMovie {
 		if m.Id == param["id"] {
 			NewMovie = append(NewMovie[:index], NewMovie[index+1:]...)
-
 			break
 		}
 	}
